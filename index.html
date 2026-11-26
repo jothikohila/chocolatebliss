@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24130f">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2324130f'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23c99a58'%3E✦%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="CHOCO BLISS — handcrafted luxury chocolate, made to melt your heart.">
+  <title>CHOCO BLISS | The Art of Chocolate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading CHOCO BLISS">
+    <div class="loader-mark">C<span>✦</span>B</div><p>MADE TO MELT YOUR HEART</p>
+  </div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Choco Bliss home"><span class="brand-icon">✦</span> CHOCO <b>BLISS</b></a>
+    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Home</a><a href="#collections">Collections</a><a href="#story">Our Story</a><a href="#bestsellers">Best Sellers</a><a href="#contact">Contact</a>
+    </nav>
+    <button type="button" class="bag-button" id="openCart" aria-label="Open shopping bag"><span class="bag-icon">♧</span><span>Bag</span><span class="cart-count" id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div><div class="hero-grain"></div>
+      <div class="hero-copy">
+        <p class="eyebrow reveal">A LITTLE LUXURY, EVERY DAY</p>
+        <h1 class="reveal">Discover the<br><em>Art of Chocolate</em></h1>
+        <p class="hero-sub reveal">Crafted with love. Made to melt your heart.</p>
+        <div class="hero-actions reveal"><a class="btn btn-gold" href="#collections">Shop Now <span>↗</span></a><a class="text-link" href="#story">Explore our story <span>→</span></a></div>
+        <div class="hero-note reveal"><span class="note-line"></span> SMALL BATCH · BIG FEELINGS</div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-chocolate img-frame" style="--fallback:url(assets/img/hero.svg)"><img data-srcs="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=1000&q=85" alt="Rich artisan chocolate bars and cocoa"></div>
+        <span class="float-piece piece-one">✦</span><span class="float-piece piece-two">◆</span><span class="float-piece piece-three">✧</span>
+        <div class="hero-stamp"><span>THE</span><strong>BLISS</strong><span>COLLECTION</span></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO INDULGE</span><span class="scroll-line"></span></div>
+    </section>
+
+    <section class="section collection-section" id="collections">
+      <div class="section-heading reveal"><div><p class="eyebrow">THE COLLECTION</p><h2>A world of <em>flavours</em></h2></div><p>Thoughtfully crafted. Beautifully wrapped.<br>Unforgettable in every bite.</p></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="featured section" id="bestsellers">
+      <div class="featured-image img-frame reveal" style="--fallback:url(assets/img/blissbox.svg)"><img data-srcs="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&w=1000&q=85" alt="Premium chocolate truffles in a gift box"><div class="image-label">OUR SIGNATURE<br><b>BLISS BOX</b></div></div>
+      <div class="featured-copy reveal"><p class="eyebrow">THE BLISS EDIT · BESTSELLER</p><h2>For the moments<br>that <em>matter.</em></h2><p class="body-copy">A little box of extraordinary. Our signature selection brings together silky ganache, delicate crunch and a whisper of sea salt — made for sharing, gifting, or keeping all to yourself.</p>
+        <div class="flavour-row"><span>Choose your mood</span><div class="flavour-options" id="flavourOptions"><button class="flavour active" data-flavour="Classic" aria-pressed="true">Classic</button><button class="flavour" data-flavour="Hazelnut" aria-pressed="false">Hazelnut</button><button class="flavour" data-flavour="Sea Salt" aria-pressed="false">Sea Salt</button></div></div>
+        <div class="purchase-row"><div class="qty-control"><button id="qtyMinus" aria-label="Decrease quantity">−</button><span id="featuredQty">1</span><button id="qtyPlus" aria-label="Increase quantity">+</button></div><strong class="featured-price">₹899</strong></div>
+        <button class="btn btn-dark" id="featuredAdd">Add to Bag <span>↗</span></button><p class="micro-note">Hand-finished · Gift-ready · Pure delight</p>
+      </div>
+    </section>
+
+    <section class="story section" id="story">
+      <div class="story-text reveal"><p class="eyebrow">A LOVE LETTER TO COCOA</p><h2>Every bite<br>tells a <em>story.</em></h2><p class="body-copy">At CHOCO BLISS, chocolate is more than a treat — it is a tiny celebration. We source thoughtful ingredients, honour the craft, and make each batch slowly, by hand, so every piece feels personal.</p><a class="text-link light-link" href="#experience">Our chocolate philosophy <span>→</span></a></div>
+      <div class="story-art reveal"><div class="story-ring"></div><div class="story-photo img-frame" style="--fallback:url(assets/img/story.svg)"><img data-srcs="https://images.unsplash.com/photo-1511381939415-e44015466834?auto=format&fit=crop&w=900&q=85" alt="Artisan chocolate and cocoa beans"></div><div class="story-caption">FROM COCOA<br>TO YOUR HEART</div></div>
+    </section>
+
+    <section class="values section">
+      <div class="section-heading centered reveal"><p class="eyebrow">THE BLISS PROMISE</p><h2>Made with <em>meaning.</em></h2></div>
+      <div class="value-grid">
+        <article class="value-card reveal"><span class="value-icon">✧</span><h3>Premium Cocoa</h3><p>Deep, balanced flavours from carefully selected cocoa.</p></article>
+        <article class="value-card reveal"><span class="value-icon">♡</span><h3>Handcrafted with Love</h3><p>Small batches, thoughtful details, and a human touch.</p></article>
+        <article class="value-card reveal"><span class="value-icon">❋</span><h3>Fresh Ingredients</h3><p>Simple, beautiful ingredients that let flavour shine.</p></article>
+        <article class="value-card reveal"><span class="value-icon">⌁</span><h3>Delivered with Care</h3><p>Every box prepared to arrive as a special moment.</p></article>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="experience-backdrop"></div><div class="cocoa-particles" aria-hidden="true"></div>
+      <div class="experience-content reveal"><p class="eyebrow">SLOW DOWN. SINK IN.</p><h2>Let the world<br><em>melt away.</em></h2><p>One square. A softer moment. A little more bliss.</p><a class="btn btn-outline" href="#collections">Find your favourite <span>↗</span></a></div>
+      <div class="pour-chocolate" aria-hidden="true"></div>
+    </section>
+
+    <section class="reviews section">
+      <div class="section-heading reveal"><div><p class="eyebrow">KIND WORDS, SWEET PEOPLE</p><h2>Love at first <em>bite.</em></h2></div><div class="review-controls"><button id="reviewPrev" aria-label="Previous review">←</button><button id="reviewNext" aria-label="Next review">→</button></div></div>
+      <div class="review-card reveal" aria-live="polite"><div class="review-stars" id="reviewStars">★★★★★</div><blockquote id="reviewQuote">“The kind of chocolate that turns an ordinary evening into a little celebration.”</blockquote><div class="review-person"><div class="avatar" id="reviewAvatar">A</div><div><strong id="reviewName">Ananya R.</strong><span id="reviewMeta">Verified chocolate lover</span></div></div><div class="review-progress"><span id="reviewProgress"></span></div></div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-intro reveal"><p class="eyebrow">LET'S MAKE IT SWEET</p><h2>Say <em>hello.</em></h2><p>Have a gifting idea, a question, or simply a love for chocolate? We'd love to hear from you.</p><div class="contact-details"><a href="mailto:hello@chocobliss.example">hello@chocobliss.example</a><span>Coimbatore · Tamil Nadu, India</span></div></div>
+      <form class="contact-form reveal" id="contactForm" novalidate><label for="name">Your name</label><input id="name" name="name" placeholder="Name" autocomplete="name" required minlength="2"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="Tell us what's on your mind..." required minlength="10"></textarea><button class="btn btn-gold" type="submit">Send Message <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-icon">✦</span> CHOCO <b>BLISS</b></a><p>Small moments. Sweeter memories.</p><div class="socials"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">ig</a><a href="https://www.pinterest.com/" target="_blank" rel="noreferrer" aria-label="Pinterest">p</a><a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> CHOCO BLISS. Made with a little extra love.</span><div><a href="#collections">Shop</a><a href="#story">Our story</a><a href="#contact">Contact</a></div></div></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true" inert><div class="cart-header"><div><p class="eyebrow">YOUR LITTLE LUXURY</p><h2>Your Bag <span id="drawerCount">(0)</span></h2></div><button class="close-cart" id="closeCart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><p>Shipping and taxes calculated at checkout.</p><p class="checkout-msg" id="checkoutMsg" role="status"></p><button class="btn btn-gold checkout-btn" id="checkoutBtn" type="button">Continue to Checkout <span>↗</span></button></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
